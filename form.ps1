@@ -177,7 +177,7 @@ $Label8.Font                     = New-Object System.Drawing.Font('Microsoft San
     $pplayer.Add_Click({
         Write-Host "Installing Pot Player"
         $ResultText.text = "`r`n" +"`r`n" + "Pot Player... Please Wait" 
-        winget install -e Daum.PotPlayer -s winget | Out-Host
+        winget install XP8BSBGQW2DKS0 --accept-package-agreements | Out-Host
         if($?) { Write-Host "Installed Pot Player" }
         $ResultText.text = "`r`n" + "Finished Installing Pot Player" + "`r`n" + "`r`n" + "Ready for Next Task"
     })
